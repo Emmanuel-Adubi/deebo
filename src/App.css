@@ -1,0 +1,19 @@
+.btn-black{
+  background:black;
+  color:white;
+}
+.btn-black:hover{
+    color:rgb(253, 223, 223);
+}
+
+.btn-outline-black{
+  border:2px solid black;
+}
+.btn-outline-black:hover{
+  background:black;
+  color:beige;
+}
+.sizingUp{
+  font-size:10px;
+}
+
