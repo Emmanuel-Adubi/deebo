@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Nav from './Nav';
 import Voting from './container/voting/voting';
