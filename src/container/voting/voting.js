@@ -1,7 +1,7 @@
-import React from 'react';
 import '../../App.css';
+import { Link } from 'react-router-dom'
 
-function Voting() {
+const Voting = () => {
   return (
     <div>
         <div class="bg-white container">
@@ -31,12 +31,12 @@ function Voting() {
         <section class="justify-content-center container">
           <div class="navbar navbar-nav navbar-inverse">
             <ul class="d-flex list-inline">
-              <li class="list-inline-item px-5"><a href="#">ALL CATEGORIES</a></li>
-              <li class="list-inline-item pr-5"><a href="polls.html">POLLS</a></li>
-              <li class="list-inline-item pr-5"><a href="pagentry.html">PAGEANTRY</a></li>
-              <li class="list-inline-item pr-5"><a href="politics.html">POLITICS</a></li>
-              <li class="list-inline-item pr-5"><a href="gameshow.html">GAMESHOW</a></li>
-              <li class="list-inline-item "><a href="music.html">MUSIC</a></li>
+              <Link class="list-inline-item px-5"><a to="#">ALL CATEGORIES</a></Link>
+              <Link class="list-inline-item pr-5"><a to="polls.html">POLLS</a></Link>
+              <Link class="list-inline-item pr-5"><a to="pagentry.html">PAGEANTRY</a></Link>
+              <Link class="list-inline-item pr-5"><a to="politics.html">POLITICS</a></Link>
+              <Link class="list-inline-item pr-5"><a to="gameshow.html">GAMESHOW</a></Link>
+              <Link class="list-inline-item "><a to="music.html">MUSIC</a></Link>
             </ul>
           </div>
 

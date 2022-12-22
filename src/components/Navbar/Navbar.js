@@ -1,21 +1,28 @@
 import React from 'react';
-// import '/App.css';
+import '../Navbar/Navbar.css';
 import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
 
-function Nav() {
+
+const Navbar = ()=> {
   const navStyle = {
     color:'black'
   }
+
+ 
+
+
   return (
     <div>
-     <nav className="navbar navbar-expand-lg navbar-light ml-3 mr-3">
+     <nav className="navbar navbar-expand-lg navbar-light bg-white ml-3 mr-3">
       <Link className="navbar-brand display-1" to="/" style={{fontWeight: 800}}>DeeBo!</Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse"
+      <Button variant='primary' className="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
-      </button>
+      </Button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto text-lg-right">
@@ -31,18 +38,17 @@ function Nav() {
           <li className="nav-item">
             <Link className="nav-link" to="/pricing" style={navStyle}>Pricing</Link>
           </li>
-          <li className="nav-item">
+          <Typography variant='body2' className="nav-item">
             <Link className="nav-link" to="/forms" style={navStyle}>Forms</Link>
-          </li>
+          </Typography>
         </ul>
-        <div className="my-5 my-lg-0">
-          <button className="btn  btn-outline-black text-black my-1 my-sm-0 p-2 mx-2
-            border-dark" type="submit"  style={navStyle}>
-              <Link to="/login" className="nav-link text-dark" style={{navStyle}}>Login</Link></button>
-          <button className="btn btn-black my-2 my-sm-0 p-2 mx-2 btn-lg"type="button">
+        <div className="my-5 my-lg-0" >
+          <Button variant='outlined' theme = {"theme"} color='default' className='p-2'  type="submit"  style={navStyle}>
+              <Link to="/login" className="nav-link text-dark" style={{navStyle}}>Login</Link></Button>
+          <Button variant='contained' className='p-2' color='secondary' type="button">
             <Link to="/getStarted" className="nav-link text-white" style={{navStyle}}>Get
             started</Link>
-            </button>
+            </Button>
         </div>
       </div>
     </nav>
@@ -50,4 +56,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navbar;

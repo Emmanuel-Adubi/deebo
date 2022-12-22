@@ -1,0 +1,8 @@
+:root{
+    --white:rgb(253, 255, 254);
+}
+
+/* NAVBAR BACKGROUND COLOR */
+.bg-white{
+    background:var(--white) !important;
+}

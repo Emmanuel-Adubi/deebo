@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -20,7 +21,7 @@ function Footer() {
         <div className="col-sm-12 col-12">
             <p className="lead font-weight-bold">Stay informed about everything new?</p>
             <input type="text" placeholder="Enter your text here" className="form-control my-3 bg-dark border-bottom-white font-weight-bolder w-50 form-control-lg" />
-            <p className="small text-white">We don't like spam either, read our <a href="#" className="text-white">privacy policy</a> if you are not convinced</p>
+            <p className="small text-white">We don't like spam either, read our <Link to="#" className="text-white">privacy policy</Link> if you are not convinced</p>
         </div>
         </div>
         <div className="jumbotron bg-white d-lg-none d-md-none">

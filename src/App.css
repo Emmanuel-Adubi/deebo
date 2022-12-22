@@ -1,9 +1,16 @@
+*,html,body{
+  font-family: 'Roboto', sans-serif;
+}
 .btn-black{
   background:black;
   color:white;
 }
 .btn-black:hover{
     color:rgb(253, 223, 223);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .btn-outline-black{
