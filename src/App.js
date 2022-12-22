@@ -4,7 +4,7 @@ import "./styles.css";
 import DesktopNavbar from "./components/Navbar/Navbar";
 import MobileNavbar from "./components/Navbar/Navbar";
 import Footer from "./components/pages/Footer";
-import DesktopFooter from "./components/pages/Footer";
+import DesktopFooter from "./components/pages/destopFooter-styled";
 import MobileFooter from "./components/pages/Footer";
 import Home from "./components/Home/Index";
 import { Link, Routes, Route } from "react-router-dom";
@@ -36,8 +36,9 @@ function App(props) {
 //   {DesktopNavbar,MobileNavbar,DesktopFooter, MobileFooter,}
 // ]
 
-  const Desktop = true
-  const Mobile = true
+  const Desktop = "<DesktopFooter />"
+  
+  const Mobile = "<Footer />"
 
   return (
     <div>
@@ -57,7 +58,9 @@ function App(props) {
         <Route path="/getStarted" element={<GetStarted />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
+      
+      {true?Desktop:Mobile}
+     
     </div>
   );
 }
